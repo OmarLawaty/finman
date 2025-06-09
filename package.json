@@ -1,0 +1,38 @@
+{
+  "name": "finman",
+  "version": "1.0.0",
+  "description": "Backend for financial management",
+  "homepage": "https://github.com/OmarLawaty/finman#readme",
+  "bugs": {
+    "url": "https://github.com/OmarLawaty/finman/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarLawaty/finman.git"
+  },
+  "license": "ISC",
+  "author": "Omar Lawatey",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--no-deprecation' tsx watch src/",
+    "test": "tsc && eslint && prettier --check .",
+    "build": "tsc --noEmit false --outDir dist/",
+    "start": "node ./dist/index.js",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "husky": "^9.1.7",
+    "mongodb": "^6.17.0",
+    "moongose": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
