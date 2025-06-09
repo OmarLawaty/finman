@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 
 import type { ITransaction } from './types';
 
-const TransactionSchema = new Schema<ITransaction>({
+export const TransactionSchema = new Schema<ITransaction>({
   type: {
     type: String,
     required: true,
